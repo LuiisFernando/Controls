@@ -1,0 +1,12 @@
+C:\Users\Luis\OneDrive\Projetos\Control\BackEnd\Control.Domain\bin\Debug\Control.Domain.dll
+C:\Users\Luis\OneDrive\Projetos\Control\BackEnd\Control.Domain\bin\Debug\Control.Domain.pdb
+C:\Users\Luis\OneDrive\Projetos\Control\BackEnd\Control.Domain\obj\Debug\Control.Domain.csprojAssemblyReference.cache
+C:\Users\Luis\OneDrive\Projetos\Control\BackEnd\Control.Domain\obj\Debug\Control.Domain.csproj.CoreCompileInputs.cache
+C:\Users\Luis\OneDrive\Projetos\Control\BackEnd\Control.Domain\obj\Debug\Control.Domain.dll
+C:\Users\Luis\OneDrive\Projetos\Control\BackEnd\Control.Domain\obj\Debug\Control.Domain.pdb
+C:\Users\Luis\Desktop\teste\BackEnd\Control.Domain\bin\Debug\Control.Domain.dll
+C:\Users\Luis\Desktop\teste\BackEnd\Control.Domain\bin\Debug\Control.Domain.pdb
+C:\Users\Luis\Desktop\teste\BackEnd\Control.Domain\obj\Debug\Control.Domain.csprojAssemblyReference.cache
+C:\Users\Luis\Desktop\teste\BackEnd\Control.Domain\obj\Debug\Control.Domain.csproj.CoreCompileInputs.cache
+C:\Users\Luis\Desktop\teste\BackEnd\Control.Domain\obj\Debug\Control.Domain.dll
+C:\Users\Luis\Desktop\teste\BackEnd\Control.Domain\obj\Debug\Control.Domain.pdb

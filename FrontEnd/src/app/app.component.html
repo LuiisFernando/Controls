@@ -1,0 +1,117 @@
+
+
+<div class="row">
+    <div class="col-md-12">
+      <div class="container">
+
+        <div class="title">
+          <h1>Movimento</h1>
+        </div>
+
+
+        <form [formGroup]="formulario" (ngSubmit)="onSubmit()">
+            <div class="row">
+
+                <div class="col-md-4">
+                  <div class="form-group">
+                    <label for="">Mês</label>
+                    <input type="text" appNumberOnlyDirective class="form-control" formControlName="mes" placeholder="Mês">
+                  </div>
+                </div>
+
+                <div class="col-md-4">
+                    <div class="form-group">
+                      <label for="">Ano</label>
+                      <input type="text" appNumberOnlyDirective class="form-control" formControlName="ano" placeholder="Ano">
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="row">
+
+              <div class="col-md-4">
+                  <label for="produto">Produto</label>
+                  <select class="form-control" formControlName="produto" (change)="changeProduto($event.target)">
+                    <option value="" disabled selected>Selecione o Produto</option>
+                    <option *ngFor="let produto of produtos" value="{{produto.COD_PRODUTO}}">
+                      {{produto.DESC_PRODUTO}}
+                    </option>
+                  </select>
+              </div>
+
+              <div class="col-md-4">
+                  <label for="cosif">Cosif</label>
+                  <select class="form-control"  formControlName="cosif">
+                    <option value="" disabled selected>Selecione o Cosif</option>
+                    <option *ngFor="let cosifs of produtosCosif" value={{cosifs.COD_COSIF}}>
+                      {{cosifs.COD_COSIF}} - {{cosifs.COD_CLASSIFICACAO}}
+                    </option>
+                  </select>
+              </div>
+            </div>
+
+            <div class="row">
+              <div class="col-md-4">
+                  <div class="form-group">
+                      <label for="valor">Valor</label>
+                      <input type="number"  id="valor" appNumberOnlyDirective class="form-control" formControlName="valor" placeholder="Valor">
+                    </div>
+              </div>
+            </div>
+
+            <div class="row">
+                <div class="col-md-4">
+                  <label for="desc">Descrição</label>
+                  <textarea id="desc"  formControlName="descricao" class="form-control"></textarea>
+                </div>
+            </div>
+
+            <div class="row">
+              <div class="col-md-5 col-md-offset-6">
+                  <button type="button" class="btn btn-danger"(click)="limparCampos()">Limpar</button>
+                  <button type="button" class="btn btn-info" (click)="novo()">Novo</button>
+                  <button type="submit" class="btn btn-success" [disabled]="!formulario.valid">Adicionar</button>
+              </div>
+            </div>
+
+        </form>
+
+        <div class="row" style="margin-top: 30px;">
+          <div class="col-md-12">
+            <div class="container">
+
+              <table class="table">
+                <thead>
+                  <tr>
+                    <th>Mes</th>
+                    <th>Ano</th>
+                    <th>Codigo do Produto</th>
+                    <th>Descrição do Produto</th>
+                    <th>NR Lancamento</th>
+                    <th>Descrição</th>
+                    <th>Valor</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr *ngFor="let movimento of listaMovimentacao">
+                    <td>{{ movimento.DAT_MES}}</td>
+                    <td>{{ movimento.DAT_ANO}}</td>
+                    <td>{{ movimento.COD_PRODUTO}}</td>
+                    <td>{{ movimento.DESC_PRODUTO}}</td>
+                    <td>{{ movimento.NUM_LANCAMENTO}}</td>
+                    <td>{{ movimento.DES_DESCRICAO}}</td>
+                    <td>{{ movimento.VAL_VALOR}}</td>
+                  </tr>
+                </tbody>
+              </table>
+
+            </div>
+          </div>
+        </div>
+
+
+
+      </div>
+    </div>
+</div>
